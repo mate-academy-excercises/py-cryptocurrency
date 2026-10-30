@@ -10,8 +10,9 @@ from app.main import cryptocurrency_action
     [
         pytest.param(20, 10, "Buy more cryptocurrency"),
         pytest.param(4, 10, "Sell all your cryptocurrency"),
-        pytest.param(10.2, 10, "Do nothing")
-
+        pytest.param(10.2, 10, "Do nothing"),
+        pytest.param(95, 100, "Do nothing"),
+        pytest.param(105, 100, "Do nothing"),
     ]
 )
 def test_can_calculate_cryptocurrency_action(
